@@ -4,12 +4,24 @@
 
 package frc.robot.subsystems;
 
+import com.ctre.phoenix6.hardware.TalonFX;
+
+import edu.wpi.first.wpilibj.drive.DifferentialDrive;
+import edu.wpi.first.wpilibj.motorcontrol.MotorController;
 import edu.wpi.first.wpilibj2.command.Command;
 import edu.wpi.first.wpilibj2.command.SubsystemBase;
 
 public class DrivetrainSubsystem extends SubsystemBase {
   /** Creates a new ExampleSubsystem. */
   public DrivetrainSubsystem() {}
+
+  public TalonFX motor1 = new TalonFX(0);
+  public TalonFX motor2 = new TalonFX(1);
+
+  public TalonFX right = new TalonFX(2);
+  public TalonFX left = new TalonFX(3);
+
+  //public DifferentialDrive drive = new DifferentialDrive((MotorController)left, (MotorController)right);
 
   /**
    * Example command factory method.
