@@ -79,7 +79,16 @@ public class Robot extends TimedRobot {
 
   /** This function is called periodically during operator control. */
   @Override
-  public void teleopPeriodic() {}
+  public void teleopPeriodic() {
+
+    //double y = RobotContainer.controller.getLeftY(); <== pull from RobotContainer bc there is an initialised xbox controller which i did not initialise...
+    //double x = RobotContainer.controller.getLeftX();
+    //theres also some initialised falcon motors which i did not initislise
+    //tell robot to drive 
+    //tis called arcade drive and its built in gasp
+    
+
+  }
 
   @Override
   public void testInit() {
